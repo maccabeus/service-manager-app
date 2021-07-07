@@ -282,7 +282,7 @@ export default function RequestSearch(props) {
   /** once we can set userEmail value, load the default schedule view for this user */
   useEffect(() => {
     loadDefaultRequest(userEmail)
-  })
+  },[userEmail])
 
   return (
     <>
