@@ -43,7 +43,7 @@ export default function WelcomePage() {
   //  * Get the user email earlier saved in the store. If there is an existing email
   //  * we will prompt user to confirm, but if not, we will ask them to add afresh
   //  */
-  //  const [userEmail, setUserEmail] = useState(null);
+  const [userEmail] = useState(null);
 
    /** refernce to the user email  user provide*/
    const emailInput= useRef(null)
