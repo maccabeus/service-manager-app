@@ -5,7 +5,7 @@ import Button from "components/CustomButtons/Button.js";
 export function CustomFormButton (props) {
 
   let buttonColor= "transparent";
-  let simple= true;
+  // let simple= true;
 
   if(props.primary===true) {
     simple=false;

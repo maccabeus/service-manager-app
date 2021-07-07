@@ -83,7 +83,7 @@ export default function RequestSearch(props) {
 
       if (response && response.data) {
         const responseData = response.data;
-        const { error, message, data } = responseData;
+        const { error, data } = responseData;
 
         /** since we are loading data that might not be available user, we will be silent 
          * if there is an error, our concern is the data return for user with previous schedules
