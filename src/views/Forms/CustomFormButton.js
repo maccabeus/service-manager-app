@@ -1,6 +1,6 @@
-import { CircularProgress } from '@material-ui/core';
 import React from 'react';
 import Button from "components/CustomButtons/Button.js";
+// import { CircularProgress } from '@material-ui/core';
 
 export function CustomFormButton (props) {
 
@@ -13,7 +13,7 @@ export function CustomFormButton (props) {
   }
   const buttonSize= props.size ?? "lg";
   const onClick= props.onClick ?? null;
-  const showSpinner= props.showSpinner ?? false;
+  // const showSpinner= props.showSpinner ?? false;
   const enabled = props.enabled ?? true;
   const title = props.title ?? "Submit Request"
   const round = props.round && props.round===true;

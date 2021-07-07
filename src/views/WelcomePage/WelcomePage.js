@@ -39,11 +39,11 @@ export default function WelcomePage() {
   /** history object for our page navigation */
   const history= useHistory();
 
-  /**
-   * Get the user email earlier saved in the store. If there is an existing email
-   * we will prompt user to confirm, but if not, we will ask them to add afresh
-   */
-   const [userEmail, setUserEmail] = useState(null);
+  // /**
+  //  * Get the user email earlier saved in the store. If there is an existing email
+  //  * we will prompt user to confirm, but if not, we will ask them to add afresh
+  //  */
+  //  const [userEmail, setUserEmail] = useState(null);
 
    /** refernce to the user email  user provide*/
    const emailInput= useRef(null)
@@ -151,7 +151,7 @@ export default function WelcomePage() {
    * 
    * @todo: in the future, we could show loading skeleton
    */
-  const [currentScreen, setCurrentScreen] = useState(<WelcomeScreen firstTime={true}  email={null} />)
+  const [currentScreen] = useState(<WelcomeScreen firstTime={true}  email={null} />)
 
   
   Store.useStateAsync("email").then(email => {

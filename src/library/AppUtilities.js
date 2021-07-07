@@ -188,7 +188,7 @@ export const parseScheduleDataForScheduler=(responseData)=>{
 
     const parsedData= responseData.map((schedule, k)=>{
 
-        const {date_created, start_time, end_time, end_date, service_id, duration, description } = schedule;
+        const {date_created, start_time, end_time, end_date, service_id, description } = schedule;
         
         /** convert date and time strings to datetome objects for javascript date creation */
         const dateStart=parseDateTimeString(date_created, start_time);

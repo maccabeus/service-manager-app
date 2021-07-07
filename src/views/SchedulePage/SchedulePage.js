@@ -145,8 +145,7 @@ export default function SchedulePage() {
      makeApiCall(apiPath, callData, "post").then(response=>{
        if(response && response.data) {
         const responseData= response.data;
-        console.log(responseData, "res data");
-        const {error, message, data}= responseData;
+        const {error, message}= responseData;
         if(error) return toast.info(message);
         toast.success(message);
         refreshPage();

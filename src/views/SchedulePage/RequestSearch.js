@@ -5,9 +5,9 @@ import Datetime from "react-datetime";
 import {
   Scheduler,
   WeekView,
-  MonthView,
-  DateNavigator,
-  DayView,
+  // MonthView,
+  // DateNavigator,
+  // DayView,
   Appointments,
 } from "@devexpress/dx-react-scheduler-material-ui";
 
