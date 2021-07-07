@@ -39,7 +39,7 @@ export default function CreateServiceForm(props) {
   return (
     <div
       className={classes.container}
-      style={{ backgroundColor: "white", padding:10, paddingTop:80, paddingBottom:60}}>
+      style={{ backgroundColor: "white", padding:10, paddingTop:80, paddingBottom:60, height:"100%"}}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={6}>
           <Card>

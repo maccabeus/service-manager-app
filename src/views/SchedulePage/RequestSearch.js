@@ -269,9 +269,9 @@ export default function RequestSearch(props) {
       <div style={{ padding: 20, paddingTop: 0 }}>
         <Paper>
           <Scheduler data={scheduleData} >
-            {/**<WeekView startDayHour={startDayHour} endDayHour={endDayHour} /> */}
-            {/** <DayView startDayHour={startDayHour} endDayHour={endDayHour} /> */}
-            <MonthView startDayHour={startDayHour} endDayHour={endDayHour} intervalCount={30} />
+            <WeekView startDayHour={startDayHour} endDayHour={endDayHour}  intervalCount={2} />
+             {/* <DayView startDayHour={startDayHour} endDayHour={endDayHour} /> */}
+            {/* <MonthView startDayHour={startDayHour} endDayHour={endDayHour} intervalCount={1} /> */}
             <Appointments onClick={(e) => alert(e)} />
           </Scheduler>
         </Paper>

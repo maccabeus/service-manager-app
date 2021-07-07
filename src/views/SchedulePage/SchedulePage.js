@@ -7,11 +7,13 @@ import { useHistory } from "react-router-dom";
 import UserIcon from "@material-ui/icons/VerifiedUser";
 import Header from "components/Header/Header.js";
 import Button from "components/CustomButtons/Button.js";
+import Footer from "./Footer";
+
 
 import styles from "assets/jss/service-manager/navbarsStyle";
 
 /** use a dummy profile image */
-import profileImage from "assets/img/faces/avatar.jpg";
+import profileImage from "assets/img/faces/avatar.png";
 
 /** * import all the required components for our page view*/
 import ScheduleNavigation from "./ScheduleNavigation";
@@ -234,6 +236,8 @@ export default function SchedulePage() {
         onSelectServiceRequestClick={selectServiceRequest}
         onUserEmailUpdate={updateUserEmail}
         />
+
+        <Footer />
     </div>
   );
 }
