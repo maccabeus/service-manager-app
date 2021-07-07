@@ -8,7 +8,6 @@ export function CustomFormButton (props) {
   // let simple= true;
 
   if(props.primary===true) {
-    simple=false;
     buttonColor="primary"
   }
   const buttonSize= props.size ?? "lg";
