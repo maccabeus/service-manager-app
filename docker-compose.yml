@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+
+  sample:
+    container_name: schedule-manager-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3001:3000
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true

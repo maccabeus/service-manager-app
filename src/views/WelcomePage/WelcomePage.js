@@ -4,6 +4,8 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import Email from "@material-ui/icons/Email";
 import Event from "@material-ui/icons/Event";
 
+import { toast, ToastContainer } from 'react-toastify';
+
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
@@ -66,6 +68,7 @@ export default function WelcomePage() {
 
     return (
       <div>
+        <ToastContainer hideProgressBar />
         <div
           className={classes.pageHeader}
           style={{
@@ -116,7 +119,6 @@ export default function WelcomePage() {
           </div>
         </div>
       </div>
-    
     )
   }
 
@@ -125,16 +127,14 @@ export default function WelcomePage() {
    * @param {*} email 
    */
   const saveUserEmail=()=>{
-    
-    console.log(emailInput, "Email input");
 
     const regExp = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     if(!emailInput.current  || !regExp.test(emailInput.current)) {
-      return alert("Please provide valid email")
+      return toast.error("Please provide valid email")
     }
-    Store.update("email", emailInput.current);
 
+    Store.update("email", emailInput.current);
     history.push("/schedule")
   }
 
