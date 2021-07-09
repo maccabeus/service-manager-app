@@ -235,8 +235,7 @@ export default function SchedulePage() {
         onSelectServiceRequestClick={selectServiceRequest}
         onUserEmailUpdate={updateUserEmail}
         />
-
-        <Footer />
+        
     </div>
   );
 }
