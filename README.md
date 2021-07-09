@@ -65,4 +65,7 @@ To search schedule using either the `service id` or the date range, do the follo
    returning service schedule within date range and having the provided id. `this is optional`
 4. Click on the `Search` button.
 
+## Demo Site
+Check out the demo site via this [Demo Site](https://service-manager.netlify.app/schedule)
+
 I welcome contributions with love 😄😄🌺🌺🎆🎆
